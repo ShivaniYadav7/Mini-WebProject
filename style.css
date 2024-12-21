@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+
+}
+.main-box{
+    background: url("photoo.jpg");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+#check{
+    display: none;
+}
+
+.menu-button {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left: 16px;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.menu-button i{
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.menu-button i:hover{
+    transform: scale(1.2);
+}
+
+.slider{
+    height:100vh;
+    opacity: 0.9;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 0 0 6px rgba(255,255,255,0.4);
+    box-sizing: border-box;
+    position: fixed;
+    left:-300px; 
+    transition: all 0.2s linear;
+    
+}
+
+.slider .menu{
+    left: 20px;
+    position: absolute;
+    width: 230px;
+    top: 80px;
+
+}
+
+ul{
+    left:0;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 4;
+    font-size: 20px;
+}
+
+
+.close-button{
+    line-height: 60px;
+    width: 20px;
+    box-shadow: 5px;
+    font-size: 25px;
+    position: absolute; 
+    opacity:0;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    right: 20px;
+}
+
+li:hover{
+    color:gainsboro;
+    cursor: pointer;
+    border:2px solid white;
+}
+
+.menu-button i:hover{
+    font-size: 30px;
+}
+
+.close-button i:hover{
+    background-color: gainsboro;
+}
+
+.slider .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: 100%;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    font-weight: 5px;
+    left: 25px;
+}
+
+.slider .social-media i{
+    padding: 10px;
+    justify-content: center; 
+    color:white;
+    
+
+}
+
+.slider .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.7);
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.slider .social-media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .slider{
+    left: 0;
+}
+#check:checked ~ .slider .close-button{
+    opacity:1;
+}
+#check:checked ~ .menu-button i{
+    opacity:0;
+}
+
+
+
+
+
